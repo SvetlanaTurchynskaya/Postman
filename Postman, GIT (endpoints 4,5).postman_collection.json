@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "672865ef-56b2-4ffe-a951-5e2660fa9b58",
+		"name": "Postman, GIT (endpoints 4,5)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Object_Info_4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/object_info_4?age=35&name=Vladimir&salary=10000",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"object_info_4"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "35"
+						},
+						{
+							"key": "name",
+							"value": "Vladimir"
+						},
+						{
+							"key": "salary",
+							"value": "10000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_Info_1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "35",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Svetlana",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/user_info_1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user_info_1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
